@@ -35,6 +35,10 @@ section{
   padding: 4rem 0;
 }
 
+img{
+  display: block;
+}
+
 h1, h2, h3{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -241,4 +245,23 @@ p, q{
 .depoimentos-lista q{
   font-style: italic;
 }
+
+/* GALERIA HOME */
+
+.galeria-home{
+  text-align: center;
+}
+
+.galeria-lista{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.galeria-lista img{
+  border-radius: 5px;
+}
+
+
+
 
