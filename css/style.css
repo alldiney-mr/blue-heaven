@@ -23,15 +23,22 @@ html{
 
 body{
   font-family: Georgia, 'Times New Roman', Times, serif;
+  background: var(--white-light);
+  color: var(--black-light);
 }
 
-h1{
+section{
+  padding: 4rem 0;
+}
+
+h1, h2, h3{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
 
 p{
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -61,6 +68,14 @@ p{
 
 .cta:hover{
   background: var(--green-dark);
+}
+
+.titulo{
+  font-size: 1.5rem;
+  color: var(--blue-light);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
 }
   
 /* HEADER */
@@ -130,3 +145,60 @@ p{
   font-style: italic;
   margin-top: 1rem;
 }
+
+/* PASSEIOS HOME */
+
+.passeios-home{
+  text-align: center;
+}
+
+.passeios-home-lista{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.passeios-home-lista li{
+  background-color: var(--white);
+  border: 1px solid var(--white-dark);
+  border-radius: 5px;
+  text-align: left;
+}
+
+.passeios-home-lista li h3{
+  font-size: 1.125rem;
+  color: var(--white);
+  text-transform: uppercase;
+  height: 200px;
+  background: url(../img/paraquedas-home.jpg) no-repeat center center;
+  border-radius: 7px 7px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.passeios-home-lista li:nth-child(2) h3{
+  background: url(../img/asa-delta-home.jpg) no-repeat center center;
+}
+
+.passeios-home-lista li:nth-child(3) h3{
+  background: url(../img/balonismo-home.jpg) no-repeat center center;
+}
+
+.passeios-home-lista p{
+  padding: 2rem;
+}
+
+.passeios-home-lista a{
+  display: block;
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--blue-light);
+  transition: 0.1s ease-out;
+}
+
+.passeios-home-lista a:hover{
+  text-decoration: underline;
+}
+
+
