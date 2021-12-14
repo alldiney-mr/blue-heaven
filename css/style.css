@@ -37,6 +37,7 @@ section{
 
 img{
   display: block;
+  max-width: 100%; /* Deixando imagens responsivas */
 }
 
 h1, h2, h3{
@@ -263,5 +264,47 @@ p, q{
 }
 
 
+/* SOBRE HOME */
 
+.sobre-home{
+  width: 100%;
+  background: var(--white-regular);
+  text-align: center;
+}
 
+.sobre-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.sobre-container img{
+  background: var(--white);
+  padding: 2rem;
+  border: 1px solid var(--white-dark);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.sobre-container p{
+  text-align: left;
+}
+
+.sobre-quote{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-style: italic;
+  max-width: 750px;
+  margin: 4rem auto 0 auto;
+  color: var(--black-dark);
+}
+
+.sobre-cite{
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  display: block;
+  text-align: right;
+  color: var(--black-light);
+}
