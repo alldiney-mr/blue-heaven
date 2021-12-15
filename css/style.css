@@ -307,4 +307,5 @@ p, q{
   display: block;
   text-align: right;
   color: var(--black-light);
+  margin-top: 1rem;
 }
