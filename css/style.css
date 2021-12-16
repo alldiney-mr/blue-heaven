@@ -297,6 +297,7 @@ p, q{
   max-width: 750px;
   margin: 4rem auto 0 auto;
   color: var(--black-dark);
+  text-align: center;
 }
 
 .sobre-cite{
