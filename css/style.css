@@ -315,7 +315,7 @@ p, q{
 .footer{
   width: 100%;
   background: var(--black-regular);
-  padding-top: 1rem;
+  padding-top: 4rem;
   color: var(--white-light);
 }
 
