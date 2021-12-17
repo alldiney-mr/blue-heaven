@@ -1,0 +1,37 @@
+.trabalhe-conosco{
+    background: url("/img/bg-trabalhe-conosco.jpg") no-repeat center center;
+    padding: 0px;
+}
+
+.procura-se .form{
+    margin: 0 auto;
+}
+
+input[type="file"]{ /* ou .form .curriculo{} */
+    font-size: 0.875rem;
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+    background: none;
+}
+
+.curriculo::-webkit-file-upload-button{
+    visibility: hidden;
+}
+
+.curriculo::before{
+    content: "Selecionar";
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    background: var(--white-regular);
+    padding: .5rem 1rem;
+    border: 1px solid var(--white-dark);
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    transition: 0.3s ease;
+}
+
+.curriculo:hover:before{
+    background: var(--white-dark);
+}
