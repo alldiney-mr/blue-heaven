@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/sobre.css">
     <link rel="stylesheet" type="text/css" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -26,13 +27,13 @@
     </header>
 
     <section class="main sobre">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h1>Sobre</h1>
             <p>Conheça a Blue Heaven.</p>
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" data-animate="scroll">
         <h2 class="titulo">Prazer, somos a blue heaven</h2>
         <div class="sobre-container">
             <img src="img/blue-heaven-logo.svg" alt="blue Heaven">
@@ -45,7 +46,7 @@
     </section>
 
     <section class="mvv">
-        <ul class="mvv-lista container">
+        <ul class="mvv-lista container" data-animate="scroll">
             <li>
                 <h3>Missão</h3>
                 <p>Proporcionar experiências inesquecíveis para as pessoas através dos esportes aéreos e inspirá-las a realizar seus mais altos sonhos.</p>
@@ -62,7 +63,7 @@
     </section>
 
     <section class="depoimentos">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h2 class="titulo">Depoimentos dos clientes</h2>
             <ul class="depoimentos-lista">
                 <li>
@@ -100,7 +101,7 @@
     </section>
 
     <section class="agende">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h2 class="titulo">Agende seu passeio</h2>
             <p>Está esperando o quê? Agende agora mesmo um passeio de sua preferência e tenha uma memória inesquecível na sua vida.</p>
             <a class="cta" href="contato.html">Agendar</a>
@@ -152,5 +153,7 @@
             <p>Este site é um projeto Tiger Codes. Mais informações em tigercodes.com.br</p>
           </div>
     </footer>
+
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>

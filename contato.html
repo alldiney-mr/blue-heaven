@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/passeios.css">
     <link rel="stylesheet" type="text/css" href="css/contato.css">
     <link rel="stylesheet" type="text/css" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -28,13 +29,13 @@
     </header>
 
     <section class="main contato">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h1>Contato</h1>
             <p>Agende passeios. Envie sua mensagem.</p>
         </div>
     </section>
 
-    <section class="container wpp">
+    <section class="container wpp" data-animate="scroll">
         <h2 class="titulo">Agende pelo WhatsApp</h2>
         <div class="wpp-box">
             <img src="img/whatsapp-logo.svg" alt="WhatsApp Blue Heaven">
@@ -44,7 +45,7 @@
     </section>
 
     <section class="atendimento">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h2 class="titulo">Atendimento personalizado</h2>
             <div class="atendimento-container">
                 <form class="form">
@@ -97,7 +98,7 @@
         </div>
     </section>
 
-    <section class="container mapa">
+    <section class="container mapa" data-animate="scroll">
         <h2 class="titulo">Visualizar no mapa</h2>
         <p>Clique sobre o mapa para abrir no aplicativo Google Maps.</p>
         <a href="https://www.google.com" target="_blank"><img src="img/mapa.jpg" alt="Mapa Blue Heaven"></a>
@@ -148,5 +149,7 @@
             <p>Este site é um projeto Tiger Codes. Mais informações em tigercodes.com.br</p>
           </div>
     </footer>
+
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>

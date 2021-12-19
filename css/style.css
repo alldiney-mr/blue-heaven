@@ -392,3 +392,16 @@ p, q{
   font-family: "Poppins", sans-serif;
   color: var(--white);
 }
+
+/* JAVASCRIPT */
+
+.js [data-animate="scroll"] {
+  opacity: 0;
+  transform: translate3d(0, 32px, 0);
+  transition: .7s;
+}
+
+.js [data-animate="scroll"].ativo {
+  opacity: 1;
+  transform: none;
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/sobre.css">
     <link rel="stylesheet" type="text/css" href="css/passeios.css">
     <link rel="stylesheet" type="text/css" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -27,13 +28,13 @@
     </header>
 
     <section class="main passeios">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h1>Passeios</h1>
             <p>A aventura está lá fora.</p>
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" data-animate="scroll">
         <h2 class="titulo">Conheça nossas Atrações</h2>
         <div class="passeios-container">
             <img src="img/paraquedas-passeios.jpg" alt="Paraquedas">
@@ -53,7 +54,7 @@
     </section>
 
     <section class="asa-delta">
-        <div class=" container passeios-container">
+        <div class=" container passeios-container" data-animate="scroll">
             <img src="img/asa-delta-passeios.jpg" alt="Asa-delta">
             <div class="info">
                 <h3>Asa-delta</h3>
@@ -70,7 +71,7 @@
         </div>
     </section>
 
-    <section class="container passeios-container">
+    <section class="container passeios-container" data-animate="scroll">
         <img src="img/balonismo-passeios.jpg" alt="Balonismo">
         <div class="info">
             <h3>Balonismo</h3>
@@ -87,7 +88,7 @@
     </section>
 
     <section class="galeria">
-        <div class="container">
+        <div class="container" data-animate="scroll">
             <h2 class="titulo">Galeria de fotos</h2>
             <ul class="galeria-lista">
                 <li><img src="img/paraquedas.jpg" alt="Paraquedas"></li>
@@ -144,5 +145,7 @@
             <p>Este site é um projeto Tiger Codes. Mais informações em tigercodes.com.br</p>
           </div>
     </footer>
+
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>
