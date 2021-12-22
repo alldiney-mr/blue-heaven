@@ -96,7 +96,7 @@ p, q{
   padding: 1.25rem 0;
   background: linear-gradient(135deg, var(--blue-light), var(--blue-dark));
   box-shadow: 0 2px 2px var(--sombra-regular);
-  z-index: 100;
+  z-index: 10;
 }
   
 .header-container{
@@ -395,6 +395,8 @@ p, q{
 
 /* JAVASCRIPT */
 
+/* ANIMAÇÃO AO SCROLL */
+
 .js [data-animate="scroll"] {
   opacity: 0;
   transform: translate3d(0, 32px, 0);
@@ -404,4 +406,86 @@ p, q{
 .js [data-animate="scroll"].ativo {
   opacity: 1;
   transform: none;
+}
+
+/* MENU HAMBURGUER */
+
+[data-menu="hamburguer"] {
+  display: none;
+}
+
+@media only screen and (max-width: 750px){
+  .header{
+    height: 4.25rem;
+    box-sizing: border-box;
+  }
+
+  .js .header-container {
+    flex-wrap: nowrap;
+  }
+
+  .js [data-menu="hamburguer"] {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: var(--white);
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 1rem;
+    position: relative;
+  }
+
+  .js [data-menu="hamburguer"]::after{
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 0.125rem;
+    background: var(--white);
+    margin-left: 1rem;
+    box-shadow: 0 .5rem var(--white), 0 -.5rem var(--white);
+  }
+
+  .js [data-menu="lista"]{
+    display: none;
+    position: absolute;
+    top: 4.25rem;
+    right: 1rem;
+    width: 200px;
+    background: var(--white);
+    padding: 1rem;
+    border: 1px solid var(--white-dark);
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    z-index: 100;
+    box-shadow: 0 2px 2px var(--sombra-light);
+  }
+
+  .js [data-menu="lista"].ativo{
+    display: block;
+  }
+
+  .js [data-menu="lista"] li + li {
+    margin-left: 0px;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid var(--white-dark);
+  }
+
+  .js [data-menu="lista"] li a {
+    font-size: .875rem;
+    text-transform: capitalize;
+    color: var(--black-light);
+    border: none;
+    transition: 0.1s ease-out;
+    width: 100%;
+  }
+
+  .js [data-menu="lista"] li a:hover {
+    color: var(--white-dark);
+  }
 }
